@@ -1,10 +1,7 @@
 node_modules
 assets
-dist
 elements
-functions.php
 package-lock.json
 readme.txt
 screenshot.png
 style.css
-theme.json
