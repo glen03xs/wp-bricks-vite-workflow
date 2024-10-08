@@ -1,6 +1,5 @@
 node_modules
-assets
-elements
+dist
 package-lock.json
 readme.txt
 screenshot.png
