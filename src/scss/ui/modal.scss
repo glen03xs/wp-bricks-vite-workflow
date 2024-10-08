@@ -1,0 +1,115 @@
+/**************
+ Modal
+***************/
+
+/****** Pop Up Base Narrow Ver - 3267 *******/
+// .brxe-popup-3267 {
+//   .brx-popup-content {
+//     width: 520px;
+//   }
+// }
+
+.brx-popup-content {
+  position: relative;
+  padding: var(--space-xs) var(--space-s);
+
+  .modal__btn-close {
+    position: absolute;
+    color: var(--btn-c-misc);
+    top: 16px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: #606060;
+    }
+  }
+
+  .modal-inner {
+    &.mi-align-center {
+      text-align: center;
+      align-items: center;
+    }
+
+    &.mi-align-right {
+      text-align: right;
+      align-items: end;
+    }
+  }
+}
+
+/****** Modal Header - Base *******/
+.modal-head--base {
+  &.mi-align-center {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.mi-align-right {
+    text-align: right;
+    align-items: end;
+  }
+}
+
+.modal-head--base__icon {}
+
+.modal-head--base__title {}
+
+.modal-head--base__subtitle {}
+
+.modal-head--base__contact {}
+
+/****** Template Sub Title *******/
+
+/********* 
+Responsive
+*********/
+
+/******  Desktop 1470 *******/
+@include desktop-1470 {
+}
+
+/******  Desktop 1366 *******/
+@include desktop-1366 {
+}
+
+/******  Desktop 1200 *******/
+@include desktop-1200 {
+}
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+}
+
+/******  Tablet 992 *******/
+@include tablet-767 {
+//   /****** Pop Up Base Narrow Ver - 3267 *******/
+//   .brxe-popup-3267 {
+//     .brx-popup-content {
+//       width: 470px;
+//     }
+//   }
+}
+
+/******  Mobile 480 *******/
+@include mobile-480 {
+//   /****** Pop Up Base Narrow Ver - 3267 *******/
+//   .brxe-popup-3267 {
+//     .brx-popup-content {
+//       width: 94%;
+
+//       .modal-wrap {
+//         .modal__btn-close {
+//           font-size: 22px;
+//         }
+//       }
+//     }
+//   }
+}
+
+/******  Mobile 414 *******/
+@include mobile-414 {
+}

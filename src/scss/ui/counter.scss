@@ -1,0 +1,90 @@
+/**************
+ Counter
+***************/
+
+/****** Counter Base *******/
+.section-counter--row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: var(--space-s);
+  row-gap: var(--space-l);
+}
+
+.section-counter--col-3 {
+
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter__icon-number {
+  display: flex;
+  color: #fff;
+  margin-bottom: var(--space-6xs);
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: var(--space-3xs);
+
+
+  .brxe-icon {
+    font-size: var(--text-6xl);
+  }
+
+  .brxe-counter {
+    min-width: 78px;
+  }
+
+  .count,
+  .suffix {
+    font-size: var(--text-5xl);
+  }
+}
+
+/****** Counter Template *******/
+.section-counter-v2 {
+  padding: var(--space-6xl) 0;
+}
+
+.section-counter-v2--row {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********* 
+Responsive
+*********/
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+
+  /*** Counter Base ***/
+  .section-counter--row {
+    max-width: 72%;
+  }
+}
+
+@include tablet-767 {
+
+  /*** Counter Base ***/
+  .section-counter--row {
+    max-width: 60%;
+  }
+}
+
+@include mobile-480 {
+
+  /*** Counter Base ***/
+  .section-counter--row {
+    row-gap: var(--space-l);
+  }
+
+  .counter__icon-number {
+    column-gap: var(--space-6xs);
+}
+
+
+}

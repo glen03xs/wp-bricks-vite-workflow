@@ -1,0 +1,23 @@
+/**************
+Hero Template
+***************/
+
+/* Section Hero */
+.hero-slider-v1--main {
+  min-height: 100%;
+}
+
+.hero-slider-v1--slide {}
+
+
+
+/********* 
+Responsive
+*********/
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+  .hero-slider-v1--main {
+    min-height: auto;
+  }
+}

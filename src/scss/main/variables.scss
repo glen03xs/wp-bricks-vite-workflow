@@ -1,0 +1,67 @@
+/**************
+ Variables
+***************/
+:root {
+  /******  Containers *******/
+  --header-container-w: 1340px;
+  --header-container-mw: 92%;
+  --hero-container-w: 1340px;
+  --hero-container-mw: 92%;
+  --body-container-w: 1340px;
+  --body-container-mw: 92%;
+  --body-container-fw-w: 100%;
+  --body-container-fw-mw: 100%;
+  --blog-container-w: 870px;
+  --blog-container-mw: 92%;
+  --footer-container-w: 1340px;
+  --footer-container-mw: 92%;
+  
+  /******  Font Family *******/
+  --font-one: "Montserrat";
+
+}
+
+/**************
+Responsive
+***************/
+
+/* desktop-1470 */
+@include desktop-1440 {
+  :root {
+    /******  Containers *******/
+    // --hero-container-w: 1160px;
+    --body-container-w: 1160px;
+  }
+}
+
+/* desktop-1470 */
+@include desktop-1200 {
+  :root {
+    /******  Containers *******/
+    // --hero-container-w: 920px;
+    --body-container-w: 920px;
+  }
+}
+
+/* tablet-992 */
+@include tablet-992 {
+  :root {
+    /******  Containers *******/
+    --hero-container-fw-w: 720px;
+    --hero-container-w: 720px;
+    --body-container-w: 720px;
+    --body-container-fw-w: 100%;
+    --body-container-fw-mw: 100%;
+  }
+}
+
+/* mobile-480 */
+@include mobile-480 {
+  :root {
+    /******  Containers *******/
+    --header-container-mw: 90%;
+    --hero-container-mw: 90%;
+    --body-container-mw: 90%;
+    --footer-container-mw: 90%;
+  }
+}

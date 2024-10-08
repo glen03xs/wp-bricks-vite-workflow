@@ -1,0 +1,72 @@
+/**************
+ 404 Page
+***************/
+
+.page-404-main {
+    padding: var(--space-4xl) 0;
+}
+
+/******  404 Main body *******/
+.page-404-main--body {
+    align-items: center;
+    text-align: center;
+}
+
+.page-404-main__title {
+    font-size: var(--text-10xl);
+}
+
+.page-404-main__subtitle {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+}
+
+.page-404-main__text {
+    max-width: 500px;
+    // text-align: center;
+    // font-weight: 600;
+    margin-bottom: var(--space-m);
+}
+
+
+/****** Template Sub Title *******/
+
+
+/********* 
+Responsive
+*********/
+
+/******  Desktop 1470 *******/
+@include desktop-1470 {
+
+}
+
+/******  Desktop 1366 *******/
+@include desktop-1366 {
+
+}
+
+/******  Desktop 1200 *******/
+@include desktop-1200 {
+
+}
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+
+}
+
+/******  Tablet 992 *******/
+@include tablet-767 {
+
+}
+
+/******  Mobile 480 *******/
+@include mobile-480 {
+
+}
+
+/******  Mobile 414 *******/
+@include mobile-414 {
+
+}

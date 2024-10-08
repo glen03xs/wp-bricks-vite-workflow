@@ -1,0 +1,62 @@
+/**************
+ Page Heading 
+***************/
+.page-heading {
+  background-color: var(--bricks-color-lgzakh);
+  background-blend-mode: overlay;
+  // height: 390px;
+  display: flex;
+  align-items: center;
+  align-self: center !important;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+  h1 {
+
+  }
+
+  &.ph-header-offset {
+    padding-top: 152px;
+  }
+}
+
+.page-heading--container {
+  align-items: center;
+}
+
+.page-heading--content {
+  padding: var(--space-l) 0;
+
+  &.ph-align-center {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.ph-blog-main {
+
+}
+
+/**************
+Responsive
+***************/
+
+/* tablet-992 */
+@include tablet-992 {
+  .page-heading {
+    &.ph-header-offset {
+      padding-top: 95px;
+    }
+
+  }
+}
+
+@include tablet-767 {
+  .page-heading {
+    &.ph-header-offset {
+      padding-top: 80px;
+    }
+  }
+}

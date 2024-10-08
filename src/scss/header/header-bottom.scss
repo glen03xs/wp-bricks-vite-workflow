@@ -1,0 +1,388 @@
+/**************
+ Header - Bottom
+***************/
+
+:root {
+  --hb-height-desktop: 60px;
+  --hb-height-tablet: 56px;
+  --hb-height-mobile: 54px;
+  --hb-bg: var(--secondary);
+  --hb-bg-sticky: #ffffff;
+  --hb-sticky-height: 110px;
+  --hb-sticky-height-tablet: 100px;
+  --hb-sticky-height-mobile: 84px;
+
+  --hb-col--gap: var(--nav-item-gap);
+
+  --hb-icon-size: var(--text-xl);
+  --hb-search-icon-size: var(
+    --hb-icon-size
+  ); // Default: --hb-icon-size | Use CF Text size to customize, e.g. --text-2xl |
+  --hb-social-icon-size: var(--text-2xl);
+  --hb-search-overlay-bg: #ffffff;
+
+  --hb-alt-nav-color: var(--tertiary);
+}
+
+.header-bottom {
+  transition: all 0.2s ease-in;
+  background-color: var(--hb-bg);
+
+  p,
+  span,
+  li,
+  a:not(.bricks-button) {
+    margin: 0;
+  }
+
+  &.hb--light-all {
+    a,
+    p,
+    span,
+      i {
+      color: #ffffff;
+    }
+
+    .bricks-nav-menu {
+      a,
+      p,
+      span,
+        i {
+        color: #ffffff;
+      }
+
+      // & > li {
+      //   &:hover a,
+      //   &:hover button
+      //   &:hover i  {
+      //     color: red;
+      //   }
+      // }
+    }
+  }
+
+  &.hb--alt-actv-hvr {
+    .bricks-nav-menu {
+
+      .current-menu-item {
+        & > a,
+        & > div > a,
+        & > div button {
+          color: var(--hb-alt-nav-color);
+        }
+      }
+
+      & > li {
+   
+        &:hover button,
+        &:hover a, 
+        &:hover i {
+          color: var(--hb-alt-nav-color);
+        }
+      }
+      // .current-menu-item {
+      //   a {
+      //     color: var(--hb-alt-nav-color);
+      //   }
+      // }
+
+      // & > li {
+      //   &:hover a,
+      //   &:hover a {
+      //     color: var(--hb-alt-nav-color);
+      //   }
+      // }
+
+      // a {
+      //   &:hover {
+      //     color: var(--hb-alt-nav-color);
+      //   }
+      // }
+    }
+  }
+}
+
+#brx-header {
+  // background-color: #fff;
+}
+
+#brx-header.sticky.scrolling > .header-bottom--wrap {
+  background-color: var(--hb-bg-sticky);
+  height: var(--hb-sticky-height);
+}
+
+/****** Header Main *******/
+.header-bottom--wrap {
+  height: var(--hb-height-desktop);
+
+  &.hb--col-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &.hb--align-space-between {
+    justify-content: space-between;
+  }
+
+  &.hb--align-center {
+    justify-content: center;
+  }
+
+  &.hb--no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &.hb--v-align-middle-all {
+    align-items: center;
+  }
+
+  // Columns
+  &.hb--col-2--even {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  &.hb--col-3--even {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+  }
+}
+
+.header-bottom--col {
+  column-gap: var(--hb-col--gap);
+  width: auto;
+
+  &.hb--c--inline {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &.hb--c--align-middle {
+    align-items: center;
+  }
+}
+
+.header-bottom--item {
+}
+
+.header-bottom--brand {
+  a {
+    height: 66px;
+    width: max-content;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.header-bottom--icon {
+  justify-content: center;
+
+  i {
+    font-size: var(--hb-icon-size);
+  }
+}
+
+.header-bottom--icon-search {
+  button.toggle {
+    color: var(--nav-text-color);
+    height: auto;
+    width: auto;
+
+    i {
+      font-size: var(--hb-search-icon-size);
+    }
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  .bricks-search-overlay {
+    background-color: var(--hb-search-overlay-bg);
+
+    button.close {
+      color: var(--nav-text-color);
+
+      &:hover {
+        color: var(--nav-text-color-hover);
+      }
+    }
+  }
+
+  &.hb--ic--bg-dark {
+    .bricks-search-overlay {
+      background-color: #000000;
+
+      button.close {
+        color: var(--text-light);
+
+        &:hover {
+          color: var(--text-light__hover);
+        }
+      }
+
+      .title {
+        color: var(--text-light);
+      }
+
+      input[type="search"] {
+        color: var(--text-light);
+      }
+    }
+  }
+
+  &.hb--ic--light-all {
+    .bricks-search-overlay {
+      button.close {
+        color: var(--text-light);
+
+        &:hover {
+          color: var(--text-light__hover);
+        }
+      }
+
+      .title {
+        color: var(--text-light);
+      }
+
+      input[type="search"] {
+        color: var(--text-light);
+      }
+    }
+  }
+}
+
+.header-bottom--search {
+  &.hb--s--w-250 {
+    input[type="search"] {
+      width: 250px;
+    }
+  }
+
+  &.hb--s--w-300 {
+    input[type="search"] {
+      width: 300px;
+    }
+  }
+
+  &.hb--s--w-350 {
+    input[type="search"] {
+      width: 350px;
+    }
+  }
+
+  &.hb--s--w-400 {
+    input[type="search"] {
+      width: 400px;
+    }
+  }
+
+  &.hb--s--w-450 {
+    input[type="search"] {
+      width: 450px;
+    }
+  }
+
+  &.hb--s--w-500 {
+    input[type="search"] {
+      width: 500px;
+    }
+  }
+
+  .bricks-search-form {
+    button {
+      background-color: var(--primary);
+      height: auto;
+    }
+  }
+}
+
+.header-bottom--text {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+}
+
+.header-bottom--social {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-5xs);
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    column-gap: var(--space-6xs);
+
+    li {
+      padding: 0 4px;
+      margin-bottom: 0;
+
+      a {
+        i {
+          font-size: var(--hb-social-icon-size);
+          width: 100%;
+          height: 100%;
+          color: var(--nav-text-color);
+        }
+      }
+    }
+  }
+}
+
+/********* 
+Responsive
+*********/
+/******  Desktop 1470 *******/
+@include desktop-1470 {
+}
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+  #brx-header.sticky.scrolling > .header-bottom {
+    height: var(--hb-sticky-height-tablet);
+  }
+
+  .header-bottom--wrap {
+    height: var(--hb-height-tablet);
+  }
+
+  .header-bottom--brand a {
+    height: 54px;
+  }
+}
+
+/******  Tablet 767 *******/
+@include tablet-767 {
+  #brx-header.sticky.scrolling > .header-bottom {
+    height: var(--hb-sticky-height-mobile);
+  }
+
+  .header-bottom--wrap {
+    height: var(--hb-height-mobile);
+  }
+
+  .header-bottom--brand a {
+    height: 48px;
+  }
+}
+
+/******  Mobile 440 *******/
+@include mobile-440 {
+  .header-bottom--brand {
+    // max-width: 100px;
+  }
+}

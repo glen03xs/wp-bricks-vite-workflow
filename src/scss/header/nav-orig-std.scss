@@ -1,0 +1,201 @@
+/**************
+ Nav Orig
+***************/
+:root {
+  --nav-item-gap: var(--space-m);
+  --nav-text-color: var(--text-body);
+  --nav-text-color-hover: var(--primary);
+}
+
+.header-main--nav-menu {
+
+  --nav-current-color: var(--primary);
+  --nav-font-size: var(--text-l);
+  --nav-font-family: var(--font-one);
+  --nav-text-case: uppercase;
+  --nav-submenu-bg: #fff;
+  --nav-submenu-text-color: var(--text-body);
+  --nav-submenu-text-color-bg-hover: var(--primary);
+  --nav-toggle-color: var(--nav-text-color);
+  --nav-mobile-bg: var(--primary);
+
+  font-family: var(--nav-font-family);
+
+  .bricks-nav-menu {
+    column-gap: var(--nav-item-gap);
+    font-size: var(--nav-font-size);
+
+    & > li {
+      margin: 0;
+
+      &:hover button,
+      &:hover a {
+        color: var(--nav-text-color-hover);
+      }
+
+      & > a,
+      & > div > a,
+      & > div > button {
+        color: var(--nav-text-color);
+        font-weight: 500;
+        text-transform: var(--nav-text-case);
+
+        cursor: pointer;
+        // transition: all 0.3s ease-in-out;
+      }
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .current-menu-item {
+      & > a,
+      & > div > a,
+      & > div button {
+        color: var(--nav-current-color);
+      }
+    }
+
+    .current-page-parent {
+      & > div > a,
+      & > div button {
+        color: var(--nav-current-color);
+      }
+    }
+
+    .sub-menu {
+      background-color: var(--nav-submenu-bg);
+
+      & > {
+        li {
+          border-bottom: 1px solid #dddddd;
+
+          & > a,
+          & > div > a,
+          & div > button {
+            color: var(--nav-submenu-text-color);
+            // font-size: var(--text-m);
+            font-weight: 400;
+          }
+
+          &:hover {
+            background-color: var(--nav-submenu-text-color-bg-hover);
+          }
+
+          &:last-child {
+            border-bottom: none !important;
+          }
+        }
+      }
+
+      .current-menu-item {
+        & > a,
+        & > div {
+          background-color: var(--nav-submenu-text-color-bg-hover);
+          color: var(--nav-submenu-text-color);
+        }
+      }
+    }
+  }
+
+  &.h-light-text {
+
+    .bricks-nav-menu {
+
+      & > li {
+
+        & > a,
+        & > div > a,
+        & > div > button {
+          color: #ffffff;
+        }
+      }
+
+      .current-menu-item {
+        & > a,
+        & > div > a,
+        & > div button {
+          color: var(--nav-current-color);
+        }
+      }
+    }
+
+
+  }
+}
+
+/****** Mobile Menu - Brick old Nav *******/
+.header-main--nav-menu {
+  .bricks-mobile-menu-wrapper {
+    padding-top: 100px;
+
+    &::before {
+      background-color: var(--nav-mobile-bg);
+    }
+
+    ul li a {
+      line-height: 40px;
+    }
+
+    .sub-menu {
+      li > a {
+        padding: 0 30px 0 44px !important;
+      }
+
+      .sub-menu li > a {
+        padding: 0 30px 0 54px !important;
+      }
+    }
+  }
+
+  .bricks-mobile-menu-toggle {
+    color: var(--nav-toggle-color);
+  }
+
+  .bricks-mobile-menu {
+    li {
+      a {
+        color: #ffffff;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+/********* 
+Responsive
+*********/
+/******  Desktop 1470 *******/
+
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+
+  // .header-main--nav-menu {
+  //   nav {
+  //     ul {
+  //       li {
+  //         .sub-menu {
+  //           li {
+  //             &:hover {
+  //               background-color: transparent;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+/******  Tablet 767 *******/
+// @include tablet-767 {
+// }
+
+/******  Mobile 440 *******/
+// @include mobile-440 {
+// }

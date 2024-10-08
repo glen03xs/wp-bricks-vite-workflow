@@ -1,0 +1,153 @@
+/**************
+   Card Main 
+  ***************/
+
+  /****** Card *******/
+.card {
+    padding: var(--space-xs) var(--space-xs);
+  
+    /* border-radius: var(--radius-m); */
+    /* box-shadow: var(--shadow-m); */
+  
+    img {
+      width: 100%;
+    }
+
+    &.c__align-left {
+      text-align: left;
+
+      & > div {
+        align-items: start;
+        text-align: left;
+      }
+    }
+
+    &.c__align-left--tab-centered {
+      text-align: left;
+
+      & > div {
+        align-items: start;
+        text-align: left;
+      }
+    }
+
+    &.c__align-center {
+      text-align: center;
+
+      & > div {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &.c__align-right {
+      text-align: right;
+
+      & > div {
+        align-items: end;
+        text-align: right;
+      }
+    }
+
+    &.c__align-right--tab-centered {
+      text-align: right;
+
+      & > div {
+        align-items: end;
+        text-align: right;
+      }
+    }
+
+  }
+  
+  .card.no-padding {
+    padding: 0;
+  }
+  
+  .card.bg-theme {
+    background-color: (--primary);
+  }
+  
+  .card.bg-white {
+    background-color: #fff;
+  }
+  
+  .card__title {
+    font-weight: 600;
+    font-size: var(--text-l);
+    margin-bottom: var(--space-5xs);
+    transition: all .25s ease;
+
+    a {
+      color: var(--primary);
+    }
+  }
+  
+  .card__text {
+    margin-bottom: var(--space-xs);
+  }
+  
+  .card__img-top {
+    margin-bottom: var(--space-xs);
+  }
+
+  .card__img-wrap {
+    overflow: hidden;
+    
+    img {
+      transition: all .25s ease;
+      aspect-ratio: 16 / 11;
+      object-fit: cover;
+    }
+  }
+
+  .card__icon-wrap {
+    margin-bottom: var(--space-xs);
+
+    i {
+      margin-bottom: 0;
+    }
+  }
+
+  .card__icon-btn {
+    margin-top: var(--space-2xs);
+    margin-bottom: var(--space-xs);
+  }
+
+  .card__link {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-xs);
+  }
+
+
+/**************
+   Responsive
+  ***************/
+  /******  Tablet 992px *******/
+@include tablet-992 {
+  .card {
+
+    img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    &.c__align-right--tab-centered {
+      text-align: center;
+
+      & > div {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &.c__align-left--tab-centered {
+      text-align: center;
+
+      & > div {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

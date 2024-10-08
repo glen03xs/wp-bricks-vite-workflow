@@ -1,0 +1,53 @@
+/**************
+   Carousel 
+  ***************/
+
+  .carousel-client--wrap {
+   
+  }
+  
+  .carousel-client--head {
+    margin-bottom: var(--space-xs);
+  }
+  
+  .carousel-client--title-label {
+    margin-bottom: var(--space-7xs);
+  }
+
+  .carousel-client--body .swiper-slide {
+    text-align: center;
+  }
+  
+  .carousel-client--body .swiper-slide img {
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+  }
+  
+  .carousel-client--body .swiper-slide img:hover {
+    filter: grayscale(0);
+  }
+
+
+.carousel--testimonial {
+
+  &.ui-light {
+
+    .splide__pagination {
+     
+      .splide__pagination__page {
+
+        background-color: #ffffff;
+
+        &.is-active {
+          background-color: #a5a5a5f2;
+        }
+      }
+
+
+    }
+  }
+
+  .splide__pagination {
+    bottom: -25px;
+  }
+}

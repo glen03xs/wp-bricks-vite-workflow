@@ -1,0 +1,20 @@
+/**************
+   Forms - Template
+  ***************/
+/****** Section Home - v2 *******/
+.section-home-contact--row-2-col-v2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: var(--space-xs);
+}
+
+/********* 
+Responsive
+*********/
+/******  Tablet 992 *******/
+@include tablet-992 {
+  .section-home-contact--row-2-col-v2 {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-s);
+  }
+}

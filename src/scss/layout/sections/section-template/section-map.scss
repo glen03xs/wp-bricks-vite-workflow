@@ -1,0 +1,55 @@
+/**************
+ Section Map
+***************/
+
+/****** Map Section *******/
+.section-map {}
+
+// Map Embed
+.section-map--embed {
+  min-height: 540px;
+}
+
+.section-map--embed-code {
+  height: 540px;
+}
+
+
+/********* 
+Responsive
+*********/
+/******  Desktop 1440 *******/
+@include desktop-1470 {
+
+}
+
+/******  Desktop 1200 *******/
+@include desktop-1200 {
+
+}
+
+/******  Tablet 992px *******/
+@include tablet-992 {
+
+  // Map Embed
+  .section-map--embed {
+    min-height: 440px;
+  }
+  
+  .section-map--embed-code {
+    height: 440px;
+  }
+
+}
+
+@include tablet-767 {
+
+}
+
+@include mobile-480 {
+
+}
+
+@include mobile-440 {
+  
+}

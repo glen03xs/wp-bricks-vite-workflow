@@ -1,0 +1,77 @@
+/**************
+ Countdown
+***************/
+
+.ui-countdown-wrap {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****** Countdown V1 *******/
+.ui-countdown--base-v1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+
+  .field {
+
+    .format {
+      color: var(--primary);
+      font-size: var(--text-9xl);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .suffix {
+      font-weight: 600;
+      font-size: var(--text-2xl);
+    }
+  }
+}
+
+
+/********* 
+Responsive
+*********/
+
+/******  Desktop 1470 *******/
+@include desktop-1470 {
+
+}
+
+/******  Desktop 1366 *******/
+@include desktop-1366 {
+
+}
+
+/******  Desktop 1200 *******/
+@include desktop-1200 {
+
+}
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+
+}
+
+/******  Tablet 992 *******/
+@include tablet-767 {
+
+}
+
+/******  Mobile 480 *******/
+@include mobile-480 {
+  .ui-countdown--base-v1 {
+    .field {
+        .suffix {
+        font-size: var(--text-m);
+      }
+    }
+  }
+}
+
+/******  Mobile 414 *******/
+@include mobile-414 {
+
+}

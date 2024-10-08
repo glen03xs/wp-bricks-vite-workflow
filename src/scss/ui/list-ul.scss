@@ -1,0 +1,63 @@
+/**************
+   List UL
+  ***************/
+
+/****** List with Icon *******/
+
+.t-list--with-icon {
+  margin: 0;
+
+  li {
+    margin-bottom: var(--space-5xs);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--text-title);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .content {
+    column-gap: var(--space-5xs);
+    justify-content: start;
+    align-items: baseline;
+    margin-bottom: var(--space-7xs);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    max-width: 20px;
+    position: relative;
+
+    i {
+      position: absolute;
+      font-size: 20px;
+      top: -15px;
+    }
+  }
+
+  .title {
+    justify-content: start;
+  }
+
+  .description {
+    padding-left: 28px;
+  }
+}
+
+/**************
+   Responsive
+  ***************/
+  /******  Tablet 992px *******/
+@include tablet-992 {
+
+}

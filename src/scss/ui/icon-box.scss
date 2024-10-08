@@ -1,0 +1,70 @@
+/**************
+Icon Box
+***************/
+
+
+.icon-box {
+
+  &.ib--color-primary {
+
+    .icon {
+      color: var(--primary);
+    }
+  }
+
+  p {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.ib-base-mb {
+    margin-bottom: var(--space-s);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+
+    h4 {
+      font-weight: 300;
+      font-size: var(--text-2xl);
+      line-height: 1.2;
+    }
+  }
+  
+}
+
+/****** Icon Box - Horizontal *******/
+.icon-box--horizontal {
+  row-gap: var(--space-2xs);
+
+  .content {
+
+    h4 {
+      margin-bottom: var(--space-3xs);
+    }
+  }
+  
+}
+
+/****** Icon Box - Vertical *******/
+.icon-box--vertical {
+  flex-direction: row;
+  column-gap: var(--space-2xs);
+
+  .content {
+
+    h4 {
+      margin-bottom: var(--space-3xs);
+    }
+  }
+  
+}
+
+
+
+

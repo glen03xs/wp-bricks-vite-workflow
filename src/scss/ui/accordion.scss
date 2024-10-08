@@ -1,0 +1,72 @@
+/**************
+ Accordion
+***************/
+
+/****** Accordion FAQ *******/
+.accordion-faq {
+  margin: 0;
+
+  .accordion-item {
+    &.brx-open {
+      .accordion-title-wrapper {
+        background-color: var(--primary);
+
+        .accordion-title  {
+          
+          h5 {
+            color: #fff;
+          }
+
+          .icon.expanded {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-title-wrapper {
+    background-color: #f6f7f8;
+    // padding: 20px 26px 20px 36px;
+    padding: var(--space-2xs) var(--space-xs) var(--space-2xs) var(--space-s);
+
+    .accordion-title {
+      h5 {
+        font-weight: 400;
+        width: 100%;
+        line-height: 1.4;
+      }
+
+      i {
+        width: 24px;
+        font-size: 24px;
+        text-align: right;
+      }
+    }
+  }
+
+  .accordion-content-wrapper {
+    padding: 20px 36px;
+  }
+}
+
+/********* 
+Responsive
+*********/
+
+/******  Tablet 992 *******/
+@include tablet-992 {
+  /*** Counter Base ***/
+}
+
+@include tablet-767 {
+  /*** Counter Base ***/
+}
+
+@include mobile-480 {
+  /*** Counter Base ***/
+}

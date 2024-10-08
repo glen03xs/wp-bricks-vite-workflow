@@ -1,0 +1,235 @@
+/**************
+ Card Templates 
+***************/
+
+/****** Card - Contact Info *******/
+.card--contact-info {
+  background: #222222;
+  padding: var(--space-l) var(--space-m);
+  border-radius: 0;
+  box-shadow: 0;
+  text-align: left;
+
+  h3 {
+    font-weight: 600;
+  }
+
+  .t-list--with-icon {
+    li {
+      margin-bottom: var(--space-2xs);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon {
+        max-width: 28px;
+        width: 30px;
+        height: auto;
+
+        i {
+          font-size: var(--text-l);
+          top: -16px;
+        }
+      }
+
+      .title {
+        font-size: var(--text-xl);
+      }
+
+      .content {
+        font-size: var(--text-2xl);
+      }
+
+      .description {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+.card--img-content-v1 {
+
+  .card__content-wrap {
+    padding: var(--space-xs);
+    border: 1px solid var(--theme-alt-1);
+  }
+
+  &.ic-v1-a {
+
+    .card__content-wrap {
+      padding: var(--space-xs) 0 0 0;
+      border: 0;      
+    }
+    
+  }
+
+  &:hover {
+
+    .card__title {
+      color: var(--primary)
+    }
+
+    .card__img-wrap img {
+      transform: scale(1.05) translateY(-6px);
+    }
+  }
+}
+
+  /* Card - with Icon Content v1 */
+  .card--icon-content-v1 {
+
+    .brxe-icon {
+      color: var(--primary);
+      fill: var(--primary);
+      font-size: var(--text-5xl);
+    }
+  }
+
+/****** Card List *******/
+.card-list--col-2 {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-xs);
+  row-gap: var(--space-m);
+}
+
+.card-list--col-3 {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: var(--space-xs);
+  row-gap: var(--space-m);
+}
+
+.card-list-w-xtra-info-l {
+  display: grid;
+  grid-template-columns: 0.85fr 3fr;
+  column-gap: var(--space-xs);
+  row-gap: var(--space-5xs);
+}
+
+.card-list-w-xtra-info-l h2 {
+  font-weight: 600;
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-2xs);
+}
+
+/* Card v2 - Item BG */
+.card-v2--w-img-item-bg {
+  background-color: var(--bricks-color-kuriwj);
+  min-height: 480px;
+  padding: var(--space-l);
+}
+
+.card-v2__label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--text-m);
+  font-weight: 600;
+  margin-bottom: var(--space-6xs);
+}
+
+.card-v2__title-xl {
+  font-size: var(--text-5xl);
+  font-weight: 600;
+  margin-bottom: var(--space-6xs);
+}
+
+.card-v2__list {
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+.card-v2__list li {
+  margin-bottom: var(--space-3xs);
+}
+
+.card-v2__list .content {
+  justify-content: center;
+}
+
+.card-v2__list .content .title {
+  margin: 0;
+}
+
+/* Card v3 - Testimonial */
+.card-v3--testimonial-3-col-list {
+  column-gap: var(--space-2xl);
+}
+
+.card-v3__icon-quote {
+  color: var(--primary);
+  transform: rotate(180deg);
+  margin-bottom: var(--space-xs);
+}
+
+.card-v3--testimonial blockquote p {
+  font-weight: 300;
+  margin-bottom: var(--space-xs);
+}
+
+.card-v3--testimonial blockquote footer {
+  padding-left: var(--space-xl);
+  position: relative;
+}
+
+.card-v3--testimonial blockquote footer::before {
+  content: "";
+  width: var(--space-l);
+  height: 2px;
+  background-color: var(--theme-alt-1);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
+.card-v3--testimonial blockquote span {
+  text-transform: uppercase;
+  font-size: var(--text-m);
+}
+
+.card-v3--testimonial blockquote cite {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.section-card-list-v2--row-col-2 {
+}
+
+/********* 
+Responsive
+*********/
+
+/******  Tablet 992px *******/
+@include tablet-992 {
+  .card-list--col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .card-list-w-xtra-info-l {
+    grid-template-columns: 1fr;
+
+    .card__text {
+      margin-bottom: var(--space-3xs);
+    }
+  }
+
+  .card-v2--w-img-item-bg {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/******  Tablet 767px *******/
+@include tablet-767 {
+  .card-list--col-2 {
+    grid-template-columns: 1fr;
+  }
+}

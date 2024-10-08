@@ -1,0 +1,59 @@
+/**************
+ Section Template
+***************/
+
+@import './section-template/section-map.scss'; // Map Section
+
+/****** Contact Section *******/
+.section-home-contact--head {
+    margin-bottom: var(--space-3xs);
+}
+
+.section-home-contact--head .section--title {
+  font-weight: 600;
+    font-size: var(--text-3xl);
+    margin-bottom: 0;
+}
+
+/****** Section Col 2 - Uneven Img *******/
+.section-2-col--uneven-img-left-v1 {
+  background-position: 46% 0;
+}
+
+
+.s2c-uneven-img-left-v1--wrap {
+  max-width: 66%;
+}
+
+/********* 
+Responsive
+*********/
+
+/******  Tablet 992px *******/
+@include tablet-992 {
+
+  .s2c-uneven-img-left-v1--wrap {
+
+
+      max-width: 82%;
+  }
+}
+
+@include tablet-767 {
+
+  .s2c-uneven-img-left-v1--wrap {
+      max-width: 100%;
+  }
+}
+
+@include mobile-480 {
+
+  .section-card-list-v2--wrap-main {
+    max-width: 100%;
+}
+}
+
+@include mobile-440 {
+
+  
+}
