@@ -4,56 +4,25 @@
 
 @import './section-template/section-map.scss'; // Map Section
 
-/****** Contact Section *******/
-.section-home-contact--head {
-    margin-bottom: var(--space-3xs);
-}
-
-.section-home-contact--head .section--title {
-  font-weight: 600;
-    font-size: var(--text-3xl);
-    margin-bottom: 0;
-}
-
-/****** Section Col 2 - Uneven Img *******/
-.section-2-col--uneven-img-left-v1 {
-  background-position: 46% 0;
-}
 
 
-.s2c-uneven-img-left-v1--wrap {
-  max-width: 66%;
-}
-
-/********* 
+/**************
 Responsive
-*********/
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Tablet 992px *******/
-@include tablet-992 {
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-  .s2c-uneven-img-left-v1--wrap {
-
-
-      max-width: 82%;
-  }
-}
-
-@include tablet-767 {
-
-  .s2c-uneven-img-left-v1--wrap {
-      max-width: 100%;
-  }
-}
-
-@include mobile-480 {
-
-  .section-card-list-v2--wrap-main {
-    max-width: 100%;
-}
-}
-
-@include mobile-440 {
-
-  
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

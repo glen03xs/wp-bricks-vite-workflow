@@ -47,6 +47,16 @@ add_filter( 'bricks/builder/i18n', function( $i18n ) {
 // add_action( 'wp_enqueue_scripts', 'bsd_scripts_styles' );
 
 
+
+
+add_action( 'wp_enqueue_scripts', 'bsd_scripts_styles' );
+
+
+// Mount Main CSS
+function bsd_scripts_styles() {
+	    
+  wp_enqueue_style( 'bsd-style-main', get_stylesheet_directory_uri() . '/assets/main.css', array(), rand(111,9999), 'all' );
+}
 require_once __DIR__ . '/config/vite.config.php';
 
 

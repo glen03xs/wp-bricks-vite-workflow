@@ -3,58 +3,23 @@
 ***************/
 
 
-
-/****** CTA Section *******/
-
-.cta-s--content {
-    
-}
-
-/****** Countdown V1 *******/
-.cta-section--fw-v1 {
-
-}
-
-/****** Template Sub Title *******/
-.cta-s--content__sub-title {
-    font-size: var(--text-xl);
-}
-
-/********* 
+/**************
 Responsive
-*********/
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Desktop 1470 *******/
-@include desktop-1470 {
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-}
-
-/******  Desktop 1366 *******/
-@include desktop-1366 {
-
-}
-
-/******  Desktop 1200 *******/
-@include desktop-1200 {
-
-}
-
-/******  Tablet 992 *******/
-@include tablet-992 {
-
-}
-
-/******  Tablet 992 *******/
-@include tablet-767 {
-
-}
-
-/******  Mobile 480 *******/
-@include mobile-480 {
-
-}
-
-/******  Mobile 414 *******/
-@include mobile-414 {
-
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

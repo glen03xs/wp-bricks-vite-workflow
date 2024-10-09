@@ -1,20 +1,25 @@
 /**************
    Forms - Template
-  ***************/
-/****** Section Home - v2 *******/
-.section-home-contact--row-2-col-v2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: var(--space-xs);
-}
+***************/
 
-/********* 
+
+/**************
 Responsive
-*********/
-/******  Tablet 992 *******/
-@include tablet-992 {
-  .section-home-contact--row-2-col-v2 {
-    grid-template-columns: 1fr;
-    row-gap: var(--space-s);
-  }
-}
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
+
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
+
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

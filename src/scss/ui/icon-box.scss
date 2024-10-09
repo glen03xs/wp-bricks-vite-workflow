@@ -3,68 +3,23 @@ Icon Box
 ***************/
 
 
-.icon-box {
+/**************
+Responsive
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-  &.ib--color-primary {
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-    .icon {
-      color: var(--primary);
-    }
-  }
-
-  p {
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &.ib-base-mb {
-    margin-bottom: var(--space-s);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .content {
-
-    h4 {
-      font-weight: 300;
-      font-size: var(--text-2xl);
-      line-height: 1.2;
-    }
-  }
-  
-}
-
-/****** Icon Box - Horizontal *******/
-.icon-box--horizontal {
-  row-gap: var(--space-2xs);
-
-  .content {
-
-    h4 {
-      margin-bottom: var(--space-3xs);
-    }
-  }
-  
-}
-
-/****** Icon Box - Vertical *******/
-.icon-box--vertical {
-  flex-direction: row;
-  column-gap: var(--space-2xs);
-
-  .content {
-
-    h4 {
-      margin-bottom: var(--space-3xs);
-    }
-  }
-  
-}
-
-
-
-
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

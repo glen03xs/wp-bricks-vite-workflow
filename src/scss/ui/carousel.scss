@@ -1,53 +1,26 @@
 /**************
    Carousel 
-  ***************/
-
-  .carousel-client--wrap {
-   
-  }
-  
-  .carousel-client--head {
-    margin-bottom: var(--space-xs);
-  }
-  
-  .carousel-client--title-label {
-    margin-bottom: var(--space-7xs);
-  }
-
-  .carousel-client--body .swiper-slide {
-    text-align: center;
-  }
-  
-  .carousel-client--body .swiper-slide img {
-    filter: grayscale(100%);
-    transition: 0.3s ease;
-  }
-  
-  .carousel-client--body .swiper-slide img:hover {
-    filter: grayscale(0);
-  }
+***************/
 
 
-.carousel--testimonial {
 
-  &.ui-light {
+/**************
+Responsive
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-    .splide__pagination {
-     
-      .splide__pagination__page {
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-        background-color: #ffffff;
-
-        &.is-active {
-          background-color: #a5a5a5f2;
-        }
-      }
-
-
-    }
-  }
-
-  .splide__pagination {
-    bottom: -25px;
-  }
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

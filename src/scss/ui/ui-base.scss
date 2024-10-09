@@ -2,75 +2,24 @@
  UI BASE
 ***************/
 
-/****** Breadcrumb *******/
-.breadcumb {  
-}
 
-.breadcumb--base {
-  width: 100%;
-  padding: var(--space-2xs) 0;
-  border-bottom: 1px solid var(--theme-alt-1);
-}
-
-.breadcrumb--inside-ph {
-  
-}
-
-/****** Social List *******/
-ul.icon-social-list {
-  column-gap: var(--space-3xs);
-  padding-left: 0;
-  width: max-content;
-
-
-  li {
-    margin-bottom: 0;
-
-    a {
-      color: unset;
-      padding: 0 !important;
-
-      i {
-        font-size: 30px;
-      }
-    }
-  }
-
-  &.icon-small {
-
-    li a i {
-      font-size: var(--text-l);
-    }
-  }
-
-  &.icon-medium {
-
-    li a i {
-      font-size: var(--text-2xl);
-    }
-  }
-
-  &.icon-large {
-
-    li a i {
-      font-size: var(--text-4xl);
-    }
-  }
-}
-
-/********* 
+/**************
 Responsive
-*********/
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Tablet 992 *******/
-@include tablet-992 {
-  /*** Counter Base ***/
-}
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-@include tablet-767 {
-  /*** Counter Base ***/
-}
-
-@include mobile-480 {
-  /*** Counter Base ***/
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

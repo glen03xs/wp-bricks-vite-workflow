@@ -2,75 +2,23 @@
  Header 
 ***************/
 
-
-/****** Nav Menu - Brick old Nav *******/
-.header-main--wrap {
-  margin: 24px 0;
-}
-
-.header-main--brand {
-  // max-width: 268px;
-  height: 66px;
-  width: auto;
-
-  img {
-    height: 100%;
-    // aspect-ratio: 16 / 4;
-  }
-}
-
-/********* 
+/**************
 Responsive
-*********/
-/******  Desktop 1470 *******/
-@include desktop-1470 {
-  .header-main--brand {
-    // max-width: 152px;
-    height: 60px;
-  }
-}
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Tablet 992 *******/
-@include tablet-992 {
-  .header-main--wrap {
-    margin: 20px 0;
-  }
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-  .header-main--brand {
-    // max-width: 138px;
-  }
-
-  .header-main--nav-menu {
-    nav {
-      ul {
-        li {
-          .sub-menu {
-            li {
-              &:hover {
-                background-color: transparent;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/******  Tablet 767 *******/
-@include tablet-767 {
-  .header-main--wrap {
-    margin: 16px 0;
-  }
-
-  .header-main--brand {
-    // max-width: 120px;
-  }
-}
-
-/******  Mobile 440 *******/
-@include mobile-440 {
-  .header-main--brand {
-    // max-width: 100px;
-  }
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

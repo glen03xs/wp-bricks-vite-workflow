@@ -2,116 +2,25 @@
  Utility Override
 ***************/
 
-.hide-section {
-  display: none;
-}
 
-.t-no-m {
-  margin: 0;
-}
-
-.t-no-mt {
-  margin-top: 0;
-}
-
-.t-no-mb {
-  margin-bottom: 0;
-
-  & > p {
-    margin-bottom: 0;
-  }
-}
-
-.t-no-mtb {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.t-no-pd {
-  padding: 0;
-}
-
-.t-no-pd-tb {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.t-no-pd-t {
-  padding-top: 0;
-}
-
-.t-no-pd-b {
-  padding-bottom: 0;
-}
-
-.t-no-pd-lr {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.t-no-pd-l {
-  padding-left: 0;
-}
-
-.t-no-pd-r {
-  padding-right: 0;
-}
-
-// Max width and width
-.hw-100 {
-  height: 100%;
-  width: 100%;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.t-mxw-100 {
-  max-width: 100%;
-}
-
-.t-mxw-92 {
-  max-width: 92%;
-}
-
-.t-mxw-90 {
-  max-width: 90%;
-}
-
-.t-mxw-86 {
-  max-width: 86%;
-}
-
-.t-mxw-84 {
-  max-width: 86%;
-}
-
-.tx-align-left {
-  text-align: left;
-}
-
-.tx-align-center {
-  text-align: center;
-
-  span:not(.wpcf7-not-valid-tip) {
-    text-align: left;
-  }
-}
-
-.tx-align-right {
-  text-align: right;
-
-  span:not(.wpcf7-not-valid-tip) {
-    text-align: left;
-  }
-}
 
 /**************
 Responsive
 ***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-/* tablet-992 */
-@include tablet-992 {
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

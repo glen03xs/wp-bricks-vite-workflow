@@ -1,62 +1,25 @@
 /**************
  Page Heading 
 ***************/
-.page-heading {
-  background-color: var(--bricks-color-lgzakh);
-  background-blend-mode: overlay;
-  // height: 390px;
-  display: flex;
-  align-items: center;
-  align-self: center !important;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 
-
-  h1 {
-
-  }
-
-  &.ph-header-offset {
-    padding-top: 152px;
-  }
-}
-
-.page-heading--container {
-  align-items: center;
-}
-
-.page-heading--content {
-  padding: var(--space-l) 0;
-
-  &.ph-align-center {
-    text-align: center;
-    align-items: center;
-  }
-}
-
-.ph-blog-main {
-
-}
 
 /**************
 Responsive
 ***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/* tablet-992 */
-@include tablet-992 {
-  .page-heading {
-    &.ph-header-offset {
-      padding-top: 95px;
-    }
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-  }
-}
-
-@include tablet-767 {
-  .page-heading {
-    &.ph-header-offset {
-      padding-top: 80px;
-    }
-  }
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

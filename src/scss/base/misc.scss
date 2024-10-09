@@ -1,61 +1,26 @@
 /**************
  Misc
 ***************/
-.misc-overlay-head-adj {
-  background-color: var(--theme-dark-gray);
-  height: 152px
-}
-
-/******  Overlay Header BG Adjustment *******/
 
 
-/****** Template Sub Title *******/
 
-
-/********* 
+/**************
 Responsive
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-/******  Desktop 1470 *******/
-@include desktop-1470 {
-
-}
-
-/******  Desktop 1366 *******/
-@include desktop-1366 {
-
-}
-
-/******  Desktop 1200 *******/
-@include desktop-1200 {
-
-}
-
-/******  Tablet 992 *******/
-@include tablet-992 {
-  .misc-overlay-head-adj {
-    height: 95px
-  }
-}
-
-/******  Tablet 992 *******/
-@include tablet-767 {
-
-}
-
-/******  Mobile 480 *******/
-@include mobile-480 {
-
-}
-
-/******  Mobile 480 *******/
-@include mobile-440 {
-  .misc-overlay-head-adj {
-    height: 72px
-  }
-}
-
-/******  Mobile 414 *******/
-@include mobile-414 {
-
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

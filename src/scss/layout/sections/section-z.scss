@@ -1,37 +1,25 @@
 /**************
  Section 
 ***************/
-/******  Section *******/
 
 
-
-
-/********* 
+/**************
 Responsive
-*********/
-/******  Desktop 1440 *******/
-@include desktop-1470 {
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-}
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-/******  Desktop 1200 *******/
-@include desktop-1200 {
-
-}
-
-/******  Tablet 992px *******/
-@include tablet-992 {
-
-}
-
-@include tablet-767 {
-
-}
-
-@include mobile-480 {
-
-}
-
-@include mobile-440 {
-
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

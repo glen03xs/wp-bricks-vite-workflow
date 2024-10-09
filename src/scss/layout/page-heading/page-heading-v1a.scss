@@ -1,93 +1,26 @@
 /**************
  Page Heading 
 ***************/
-:root {
-  --ph-height: 268px;
-  --ph-height__l: 180px;
-  --ph-height__m: 168px;
-
-  --ph-padding-tb: 0;
-  --ph-padding-lr: 0;
-
-  --ph-v-align: center; // Options: Start | Center | End
-  --ph-h-align: center; // Options: Start | Center | End
-  --ph-v-align__on-l: var(--ph-v-align); // Default: Desktop / Options: Start | Center | End
-  --ph-h-align__on-l: var(--ph-h-align); // Default: Desktop /  Start | Center | End
-  --ph-v-align__on-m: var(--ph-v-align); // Default: Desktop /  Start | Center | End
-  --ph-h-align__on-m: var(--ph-h-align); // Default: Desktop /  Start | Center | End
-  --ph-bg-color: #23282d;
-}
 
 
-.page-heading-v1a {
-  background-color: var(--ph-bg-color);
-
-}
-
-.page-heading {
-  background-blend-mode: overlay;
-  height: var(--ph-height);
-  display: flex;
-  justify-content: var(--ph-v-align);
-  // flex-direction: row;
-  flex-wrap: wrap;
-  padding: var(--ph-padding-tb) var(--ph-padding-lr) ;
-
-
-  &.ph-header-offset {
-    padding-top: 152px;
-  }
-
-  .breadcumb--base {
-    border-bottom: none;
-
-
-    &.bc-top {
-      padding:0 0 var(--space-5xs);
-    }
-
-    &.bc-bottom {
-      padding: var(--space-5xs) 0 0;
-    }
-  }
-}
-
-.page-heading--content {
-  align-items: var(--ph-h-align);
-}
-
-.ph-blog-main {
-
-}
 
 /**************
 Responsive
 ***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/* tablet-992 */
-@include tablet-992 {
-  .page-heading {
-    height: var(--ph-height__l);
-    &.ph-header-offset {
-      padding-top: 95px;
-    }
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-  }
-
-  .page-heading--content {
-    align-items: var(--ph-h-align__on-l);
-  }
-}
-
-@include tablet-767 {
-  .page-heading {
-    height: var(--ph-height__m);
-    &.ph-header-offset {
-      padding-top: 80px;
-    }
-  }
-
-  .page-heading--content {
-    align-items: var(--ph-h-align__on-m);
-  }
-}
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

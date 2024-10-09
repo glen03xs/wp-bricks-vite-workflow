@@ -2,22 +2,23 @@
 Hero Template
 ***************/
 
-/* Section Hero */
-.hero-slider-v1--main {
-  min-height: 100%;
-}
-
-.hero-slider-v1--slide {}
-
-
-
-/********* 
+/**************
 Responsive
-*********/
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Tablet 992 *******/
-@include tablet-992 {
-  .hero-slider-v1--main {
-    min-height: auto;
-  }
-}
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
+
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
+ 
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}

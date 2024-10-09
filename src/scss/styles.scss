@@ -5,81 +5,75 @@ Author URI: glennepomuceno.com
 /* -------------------------------------------------------------------------------------*/
 
 /*-------------- Plugins --------------*/
-@import './plugins/core_framework.scss'; // For Bricks Editor - To be remove in Production
-// @import './plugins/normalize.scss';
-// @import './plugins/_fontawesome.scss';
-// @import './plugins/slick.scss';
-// @import './plugins/slick-theme.scss';
+
 
 /*-------------- Main --------------*/
-@import "./main/settings.scss";
-@import "./main/utilities.scss";
-// @import './utilities/grid';
-// @import './utilities/fonts';
+// @import "./main/settings.scss";
+// @import "./main/utilities.scss";
 
 /*-------------- Base --------------*/
-@import './base/base.scss';
-@import './base/theme.scss';
-@import './base/misc.scss';
+// @import './base/base.scss';
+// @import './base/theme.scss';
+// @import './base/misc.scss';
 
 /*-------------- Header --------------*/
-@import './header/header-top.scss';
-// @import './header/header-transparent.scss';
-@import './header/header-std.scss';
-@import './header/header-bottom.scss';
-@import './header/nav-orig-std.scss';
+// @import './header/header-top.scss';
+// // @import './header/header-transparent.scss';
+// @import './header/header-std.scss';
+// @import './header/header-bottom.scss';
+// @import './header/nav-orig-std.scss';
 
 /*-------------- Footer --------------*/
-@import './footer/footer-base.scss';
-@import './footer/footer-block.scss';
-@import './footer/footer-bottom.scss';
+// @import './footer/footer-base.scss';
+// @import './footer/footer-block.scss';
+// @import './footer/footer-bottom.scss';
 
 /*-------------- Layout --------------*/
 // Hero
-@import './layout/hero/hero-base.scss';
-@import './layout/hero/hero-template.scss';
-@import './layout/page/page-404.scss';
+// @import './layout/hero/hero-base.scss';
+// @import './layout/hero/hero-template.scss';
+// @import './layout/page/page-404.scss';
 
 // Page Heading
 // @import './layout/page-heading/page-heading-v1.scss';
-@import './layout/page-heading/page-heading-v1a.scss';
+// @import './layout/page-heading/page-heading-v1a.scss';
 
 // Blog
-@import './layout/blog/blog-main.scss';
-@import './layout/blog/blog-blocks.scss';
-@import './layout/blog/blog-single.scss';
+// @import './layout/blog/blog-main.scss';
+// @import './layout/blog/blog-blocks.scss';
+// @import './layout/blog/blog-single.scss';
 
 //Sections
-@import './layout/sections/section-main.scss';
-@import './layout/sections/section-grid.scss';
-@import './layout/sections/section-template.scss';
+// @import './layout/sections/section-main.scss';
+// @import './layout/sections/section-grid.scss';
+// @import './layout/sections/section-template.scss';
 // @import './pages/homepage';
 
 /*-------------- UI --------------*/
-@import './ui/ui-base.scss';
-@import './ui/buttons';
-@import './ui/card-main.scss';
-@import './ui/card-templates.scss';
-@import './ui/list-ul.scss';
-@import './ui/carousel.scss';
-@import './ui/cta.scss';
-@import './ui/counter.scss';
-@import './ui/countdown.scss';
-@import './ui/accordion.scss';
-@import './ui/icon-box.scss';
+// @import './ui/ui-base.scss';
+// @import './ui/buttons';
+// @import './ui/card-main.scss';
+// @import './ui/card-templates.scss';
+// @import './ui/list-ul.scss';
+// @import './ui/carousel.scss';
+// @import './ui/cta.scss';
+// @import './ui/counter.scss';
+// @import './ui/countdown.scss';
+// @import './ui/accordion.scss';
+// @import './ui/icon-box.scss';
 
 //Form
-@import './ui/contact-form/forms-template.scss';
-// @import './ui/contact-form/forms-bricks.scss';
-@import './ui/contact-form/forms-cf7.scss';
+// @import './ui/contact-form/forms-template.scss';
+// // @import './ui/contact-form/forms-bricks.scss';
+// @import './ui/contact-form/forms-cf7.scss';
 
-@import './ui/modal.scss';
+// @import './ui/modal.scss';
 // @import './layout/nav';
 // @import './layout/header';
 // @import './layout/footer';
 // @import './layout/page';
 
-@import "./main/utilities-overide.scss";
+// @import "./main/utilities-overide.scss";
 
 
 

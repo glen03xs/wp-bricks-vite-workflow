@@ -2,103 +2,26 @@
  Blog Single
 ***************/
 
-/****** Post Single Base - Head *******/
-.ph-blog-single--content {
-  padding: var(--space-2xl) 0 var(--space-4xl);
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  .ph-blog-single__categories {
-    text-transform: uppercase;
-    margin-bottom: var(--space-2xs);
-    position: relative;
-
-    span {
-      position: relative;
-      top: -2px;
-    }
-
-    a {
-      letter-spacing: .25px;
-    }
-  }
-  
-  .ph-blog-single__title {
-    font-size: var(--text-4xl);
-    margin-bottom: var(--space-xs);
-    line-height: 1.2;
-  }
-
-  .ph-blog-single__meta {
-    
-    .separator {
-      display: flex;
-
-      i {
-        font-size: 5px;
-      }
-    }
-  }
-}
-
-/****** Post Single v1 - Body *******/
-.blog-single-body--1-col-v1 {
-  padding-bottom: var(--space-2xs);
-}
-
-// .bm-col-single {}
-
-.bm-col-single__hr {
-  color: #d3d9e7;
-}
 
 
-/****** Post Single v1 - Body Footer *******/
-.blog-post-footer {
-  padding-top: var(--space-s);
-  padding-bottom: var(--space-2xl);
-}
 
-// .blog-post-footer--row {
-//   // row-gap: var(--space-m);
-// }
-
-.blog-post-footer__hr {
-  margin: var(--space-l) 0;
-  color: #d3d9e7;
-}
-
-
-/********* 
+/**************
 Responsive
-*********/
+***************/
+/* desktop-1440 | __on-3xl */ 
+@include desktop-1440  {}
 
-/******  Desktop 1470 *******/
-@include desktop-1470 {
-}
+/* desktop-1366 | __on-2xl */
+@include desktop-1366  {}
 
-/******  Desktop 1366 *******/
-@include desktop-1366 {
-}
-
-/******  Desktop 1200 *******/
-@include desktop-1200 {
-}
-
-/******  Tablet 992 *******/
-@include tablet-992 {
+/* desktop-1200 | __on-xl */
+@include desktop-1200  {}
  
-}
-
-/******  Tablet 992 *******/
-@include tablet-767 {
-}
-
-/******  Mobile 480 *******/
-@include mobile-480 {
-}
-
-/******  Mobile 414 *******/
-@include mobile-414 {
-}
+/* tablet-992 | __on-l */
+@include tablet-992 {}
+ 
+/* tablet 767 __on-m */
+@include tablet-767 {}
+ 
+/* mobile-440 __on-s */
+@include mobile-440 {}
